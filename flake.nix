@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nvf.url = "github:notashelf/nvf";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-24.11";
@@ -12,7 +13,7 @@
     stylix.url = "github:danth/stylix/release-24.11";
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, ... }: 
+  outputs = { self, nixpkgs, home-manager, stylix, nvf, ... }: 
   let
     system = "x86_64-linux";
 
@@ -32,6 +33,7 @@
       inherit pkgs;
       modules = [
 	stylix.homeManagerModules.stylix
+	nvf.homeManagerModules.default
         ./home-manager/home.nix
       ];
     };

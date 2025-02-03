@@ -96,10 +96,10 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim 
-    home-manager
-    wget
-    git
+    # vim 
+    # home-manager
+    # wget
+    # git
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

@@ -1,18 +1,31 @@
-{ pkgs, ... }: {
+{ config, pkgs, ... }: {
   programs.neovim = {
     enable = true;
-    extraPackages = with pkgs; [
-      lua-language-server
-      python311Packages.python-lsp-server
-      nixd
-      vimPlugins.nvim-treesitter-parsers.hyprlang
-      vimPlugins.telescope-nvim
-      # theme
-      vimPlugins.gruvbox
-    ];
+    defaultEditor = true;
+    viAlias = true;
+    vimAlias = true;
+    vimdiffAlias = true;
+    plugins = with pkgs.vimPlugins; [
+      nvim-lspconfig
+      nvim-treesitter.withAllGrammars
+      plenary-nvim
+      gruvbox
+      mini-nvim
+      ];
     extraConfig = ''
       set number
       syntax on
+
+      " Enable 24-bit colors (true color)
+      if (has("termguicolors"))
+        set termguicolors
+      endif
+
+      " Load the gruvbox theme
+      colorscheme gruvbox
+
+      " Optional: Set background to dark
+      set background=dark
     '';
   };
 }

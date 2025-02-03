@@ -4,8 +4,9 @@
     ./bash.nix
     ./git.nix
     ./hyprland
-    ./neovim.nix
-    # ./nvf.nix
+    # ./neovim.nix
+    ./nvf.nix
+    ./qt.nix
     ./ranger.nix
     ./starship.nix
     ./stylix.nix

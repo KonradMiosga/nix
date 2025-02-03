@@ -30,7 +30,7 @@
         gaps_in = 0;
         gaps_out = 0;
 
-        border_size = 5;
+        border_size = 3;
 
         "col.active_border" = "rgba(d65d0eff) rgba(98971aff) 45deg";
         "col.inactive_border" = "rgba(3c3836ff)";
@@ -68,7 +68,7 @@
 
       gestures = {
         workspace_swipe = true;
-        workspace_swipe_invert = false;
+        workspace_swipe_invert = true;
         workspace_swipe_forever = true;
       };
 
@@ -97,10 +97,10 @@
 
         "workspace 3,class:(obsidian)"
         "workspace 3,class:(zathura)"
-        "workspace 4,class:(com.obsproject.Studio)"
+        # "workspace 4,class:(com.obsproject.Studio)"
         "workspace 5,class:(telegram)"
-        "workspace 5,class:(vesktop)"
-        "workspace 6,class:(teams-for-linux)"
+        "workspace 6,class:(discord)"
+        "workspace 7,class:(spotify)"
 
         "suppressevent maximize, class:.*"
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
