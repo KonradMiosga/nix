@@ -7,6 +7,7 @@
     # Desktop apps
     telegram-desktop
     discord
+    obsidian
     spotify
     networkmanagerapplet
     wirelesstools
