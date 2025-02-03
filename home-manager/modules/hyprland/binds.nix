@@ -6,6 +6,8 @@
       "$mainMod SHIFT, Q, exit,"
       "$mainMod,       R, exec, $fileManager"
       "$mainMod,       F, togglefloating,"
+      "$mainMod,       M, fullscreen,1"
+      "$mainMod SHIFT, M, fullscreen,0"
       "$mainMod,       D, exec, $menu --show drun"
       "$mainMod,       P, pin,"
       "$mainMod SHIFT, J, togglesplit,"
