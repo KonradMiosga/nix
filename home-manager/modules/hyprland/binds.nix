@@ -18,7 +18,7 @@
       "$mainMod SHIFT, L, exec, loginctl lock-session"
       "$mainMod,       P, exec, hyprpicker -an"
       "$mainMod,       N, exec, swaync-client -t"
-      ", Print, exec, grimblast --notify --freeze copysave area"
+      "$mainMod SHIFT, P, exec, grimblast --notify --freeze copysave area"
 
       # Moving focus
       "$mainMod, h, movefocus, l"
@@ -61,7 +61,7 @@
       "$mainMod SHIFT, 8, movetoworkspacesilent, 8"
       "$mainMod SHIFT, 9, movetoworkspacesilent, 9"
       "$mainMod SHIFT, 0, movetoworkspacesilent, 10"
-    
+
       # Movin workspaces to monitors
       "$mainMod SHIFT, Left, movecurrentworkspacetomonitor, l"
       "$mainMod SHIFT, Right, movecurrentworkspacetomonitor, r"

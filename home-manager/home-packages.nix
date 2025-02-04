@@ -5,16 +5,17 @@
     # Packages in each category are sorted alphabetically
 
     # Desktop apps
-    telegram-desktop
     discord
+    networkmanagerapplet
     obsidian
     spotify
-    networkmanagerapplet
+    telegram-desktop
     wirelesstools
 
     # CLI utils
-    fzf
     brightnessctl
+    fzf
+    grimblast
     pavucontrol
     playerctl
     ripgrep

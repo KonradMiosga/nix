@@ -20,6 +20,7 @@
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   hardware.enableAllFirmware = true;
+  hardware.facetimehd.enable = true;
   networking.hostName = "scrappy"; # Define your hostname.
   # networking.wireless.enable = true; # Enables wireless support via wpa_supplicant.
 
@@ -96,7 +97,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    # vim 
+    # vim
     # home-manager
     # wget
     # git
