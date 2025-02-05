@@ -10,6 +10,7 @@
     obsidian
     spotify
     telegram-desktop
+    vesktop
     wirelesstools
 
     # CLI utils

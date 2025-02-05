@@ -10,6 +10,7 @@
     ./ranger.nix
     ./starship.nix
     ./stylix.nix
+    ./swaync
     ./tmux.nix
     ./waybar
     ./wofi

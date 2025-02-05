@@ -99,7 +99,7 @@
         "workspace 3,class:(zathura)"
         # "workspace 4,class:(com.obsproject.Studio)"
         "workspace 5,class:(telegram)"
-        "workspace 6,class:(discord)"
+        "workspace 6,class:(vesktop)"
         "workspace 7,class:(spotify)"
 
         "suppressevent maximize, class:.*"

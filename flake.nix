@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
     nvf.url = "github:notashelf/nvf";
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-24.11";
@@ -19,6 +20,7 @@
     home-manager,
     stylix,
     nvf,
+    nixos-hardware,
     ...
   }: let
     system = "x86_64-linux";
@@ -29,6 +31,7 @@
     nixosConfigurations.scrappy = nixpkgs.lib.nixosSystem {
       inherit system;
       modules = [
+        nixos-hardware.nixosModules.apple-macbook-air-7
         ./hosts/scrappy/configuration.nix
       ];
     };

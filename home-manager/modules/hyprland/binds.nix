@@ -27,10 +27,10 @@
       "$mainMod, j, movefocus, d"
 
       # Moving windows
-      "$mainMod SHIFT, l,  swapwindow, l"
-      "$mainMod SHIFT, h, swapwindow, r"
-      "$mainMod SHIFT, k,    swapwindow, u"
-      "$mainMod SHIFT, j,  swapwindow, d"
+      # "$mainMod SHIFT, l,  swapwindow, l"
+      # "$mainMod SHIFT, h, swapwindow, r"
+      # "$mainMod SHIFT, k,    swapwindow, u"
+      # "$mainMod SHIFT, j,  swapwindow, d"
 
       # Resizeing windows                   X  Y
       "$mainMod CTRL, left,  resizeactive, -60 0"
@@ -83,8 +83,8 @@
       ",XF86AudioLowerVolume,  exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
       ",XF86AudioMute,         exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
       ",XF86AudioMicMute,      exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
-      "$mainMod, bracketright, exec, brightnessctl s 10%+"
-      "$mainMod, bracketleft,  exec, brightnessctl s 10%-"
+      ",XF86MonBrightnessUp,      exec, brightnessctl s 10%+"
+      ",XF86MonBrightnessDown,    exec, brightnessctl s 10%-"
     ];
 
     # Audio playback
