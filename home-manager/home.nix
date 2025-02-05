@@ -10,6 +10,7 @@
     username = "copperplate";
     homeDirectory = "/home/copperplate";
     stateVersion = "24.11";
+    sessionPath = ["$HOME/.npm-global/bin"];
 
     packages = with pkgs; [
       git

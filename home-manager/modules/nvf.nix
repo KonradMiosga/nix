@@ -65,7 +65,20 @@
           java = {
             enable = true;
           };
+          markdown = {
+            enable = true;
+            extensions.render-markdown-nvim.enable = true;
+          };
         };
+        # notes.obsidian = {
+        #   enable = true;
+        #   setupOpts = {
+        #     workspaces = {
+        #       name = "Notes";
+        #       path = "~/Studium/notes";
+        #     };
+        #   };
+        # };
       };
     };
   };

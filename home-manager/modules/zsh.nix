@@ -11,6 +11,9 @@
       #git
       gs = "git status";
     };
+    initExtra = ''
+        bindkey -s ^f "tmux-sessionizer\n"
+    '';
     # shellAliases =
     #   let
     #     flakeDir = "~/flake";

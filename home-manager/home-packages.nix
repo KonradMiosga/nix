@@ -28,6 +28,10 @@
 
     # Coding stuff
     gcc
+    nodejs_23
+    # LSPs
+    jdt-language-server
+    lua-language-server
 
     # WM stuff
     libsForQt5.xwaylandvideobridge
