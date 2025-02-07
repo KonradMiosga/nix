@@ -6,11 +6,13 @@
 
     # Desktop apps
     discord
+    google-chrome
     networkmanagerapplet
     obsidian
     spotify
     telegram-desktop
     vesktop
+    vscode
     wirelesstools
 
     # CLI utils
@@ -29,6 +31,7 @@
     # Coding stuff
     gcc
     nodejs_23
+    openjdk
     # LSPs
     jdt-language-server
     lua-language-server

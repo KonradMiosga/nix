@@ -31,7 +31,7 @@
     nixosConfigurations.scrappy = nixpkgs.lib.nixosSystem {
       inherit system;
       modules = [
-        nixos-hardware.nixosModules.apple-macbook-air-7
+        # nixos-hardware.nixosModules.apple-macbook-air-7
         ./hosts/scrappy/configuration.nix
       ];
     };

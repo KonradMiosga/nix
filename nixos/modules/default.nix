@@ -5,5 +5,6 @@
     # ./home-manager.nix
     ./hyprland.nix
     ./kernel.nix
+    ./apple_tweaks.nix
   ];
 }

@@ -9,5 +9,8 @@
     options = {
       font = "JetBrains Mono Bold 13";
     };
+    extraConfig = ''
+        set selection-clipboard clipboard
+    '';
   };
 }
