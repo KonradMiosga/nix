@@ -7,7 +7,8 @@
 
   home.packages = with pkgs; [
     dejavu_fonts
-    jetbrains-mono
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.hack
     noto-fonts
     noto-fonts-lgc-plus
     texlivePackages.hebrew-fonts
@@ -15,7 +16,7 @@
     font-awesome
     powerline-fonts
     powerline-symbols
-    (nerdfonts.override {fonts = ["NerdFontsSymbolsOnly"];})
+    # (nerdfonts.override {fonts = ["NerdFontsSymbolsOnly"];})
   ];
 
   stylix = {
@@ -69,9 +70,10 @@
       light = "Papirus-Light";
     };
 
-    image = pkgs.fetchurl {
-      url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-rainbow.png";
-      sha256 = "036gqhbf6s5ddgvfbgn6iqbzgizssyf7820m5815b2gd748jw8zc";
-    };
+    # image = pkgs.fetchurl {
+    #   url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-rainbow.png";
+    #   sha256 = "036gqhbf6s5ddgvfbgn6iqbzgizssyf7820m5815b2gd748jw8zc";
+    # };
+    image = ./wallpapers/mustacho.png;
   };
 }

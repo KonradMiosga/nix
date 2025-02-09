@@ -27,13 +27,16 @@
       ];
 
       general = {
-        gaps_in = 0;
-        gaps_out = 0;
+        gaps_in = 2;
+        gaps_out = 4;
 
-        border_size = 3;
+        border_size = 2;
 
-        "col.active_border" = "rgba(d65d0eff) rgba(98971aff) 45deg";
-        "col.inactive_border" = "rgba(3c3836ff)";
+        # "col.active_border" = "rgba(d65d0eff) rgba(98971aff) 45deg";
+        # "col.inactive_border" = "rgba(3c3836ff)";
+
+        "col.active_border" = "rgba(ebdbb2ff) rgba(ebdbb2ff) 45deg";
+        "col.inactive_border" = "rgba(928374ff)";
 
         resize_on_border = true;
 
@@ -42,22 +45,66 @@
       };
 
       decoration = {
-        rounding = 0;
+        rounding = 2;
 
-        active_opacity = 1.0;
-        inactive_opacity = 1.0;
+        active_opacity = 0.92;
+        inactive_opacity = 0.76;
 
         shadow = {
           enabled = false;
         };
 
-        blur = {
-          enabled = false;
-        };
+        # blur = {
+        #   enabled = false;
+        # };
+
+      blur = {
+        enabled = true;
+        size = 5;
+        passes = 5;
+        popups = true;
+        special = true;
+        new_optimizations = true;
+        ignore_opacity = true;
+      };
+
       };
 
       animations = {
-        enabled = false;
+        # enabled = false;
+        enabled = true;
+        first_launch_animation = true;
+
+        bezier = [
+            "drag, 0.2, 1, 0.2, 1"
+            "pop, 0.1, 0.8, 0.2, 1"
+            "liner, 1, 1, 1, 1"
+            ];
+       
+        animation = [
+            "fade, 1, 5, drag"
+
+            "windowsIn, 1, 6, drag, slide"
+            "windowsOut, 1, 10, pop, popin 75%"
+            "windowsMove, 1, 6, drag, slide"
+            "fadeIn, 1, 5, drag"
+            "fadeOut, 1, 5, drag"
+            "fadeSwitch, 1, 12, drag"
+
+            "layersIn, 1, 7, drag, slide"
+            "layersOut, 1, 20, drag"
+            "fadeLayersIn, 1, 5, drag"
+            "fadeLayersOut, 1, 10, drag"
+
+            "border, 1, 1, liner"
+            "borderangle, 1, 30, liner, loop"
+
+            "workspacesIn, 1, 7, drag, slidefade 40%"
+            "workspacesOut, 1, 7, drag, slidefade 40%"
+
+            "specialWorkspaceIn, 1, 6, drag, slidefadevert 80%"
+            "specialWorkspaceOut, 1, 6, drag, slidefadevert 65%"
+            ];
       };
 
       input = {
@@ -89,7 +136,7 @@
       };
 
       windowrulev2 = [
-        "bordersize 0, floating:0, onworkspace:w[t1]"
+        # "bordersize 0, floating:0, onworkspace:w[t1]"
 
         "float,class:(mpv)|(imv)|(showmethekey-gtk)"
         "move 990 60,size 900 170,pin,noinitialfocus,class:(showmethekey-gtk)"
@@ -98,7 +145,7 @@
         "workspace 3,class:(obsidian)"
         "workspace 3,class:(zathura)"
         # "workspace 4,class:(com.obsproject.Studio)"
-        "workspace 5,class:(telegram)"
+        "workspace 5,class:(org.telegram.desktop)"
         "workspace 6,class:(vesktop)"
         "workspace 7,class:(spotify)"
 
@@ -113,10 +160,10 @@
         "nofocus, class:^(xwaylandvideobridge)$"
       ];
 
-      workspace = [
-        "w[tv1], gapsout:0, gapsin:0"
-        "f[1], gapsout:0, gapsin:0"
-      ];
+      # workspace = [
+      #   "w[tv1], gapsout:0, gapsin:0"
+      #   "f[1], gapsout:0, gapsin:0"
+      # ];
     };
   };
 }

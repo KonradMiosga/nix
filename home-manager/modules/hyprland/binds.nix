@@ -18,7 +18,8 @@
       "$mainMod SHIFT, L, exec, loginctl lock-session"
       "$mainMod,       P, exec, hyprpicker -an"
       "$mainMod,       N, exec, swaync-client -t"
-      "$mainMod SHIFT, P, exec, grimblast --notify --freeze copysave area"
+      # "$mainMod SHIFT, P, exec, grimblast --notify --freeze copysave area"
+      "$mainMod SHIFT, P, exec, grim -g \"$(slurp)\" -t ppm - | satty --early-exit --initial-tool arrow --copy-command wl-copy --save-after-copy --output-filename ~/screens/$(date '+%Y%m%d-%H:%M:%S').png --annotation-size-factor 1 --filename -"
 
       # Moving focus
       "$mainMod, h, movefocus, l"

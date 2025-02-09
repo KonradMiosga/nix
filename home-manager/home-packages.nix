@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
@@ -17,11 +18,16 @@
 
     # CLI utils
     brightnessctl
+    cava
     fzf
+    grim
+    slurp
+    satty
     grimblast
     pavucontrol
     playerctl
     ripgrep
+    tree
     ueberzugpp
     unzip
     wget
@@ -35,6 +41,10 @@
     # LSPs
     jdt-language-server
     lua-language-server
+    nil
+    nixd
+    # Formatter
+    nixfmt-rfc-style
 
     # WM stuff
     libsForQt5.xwaylandvideobridge
