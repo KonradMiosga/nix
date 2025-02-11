@@ -10,7 +10,6 @@
 }:
 {
   imports = [
-    # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ../../nixos/modules
   ];
@@ -21,14 +20,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # boot.kernelParams = lib.mkForce [
-  #   "hid_apple.iso_layout=0"
-  # ];
-
-  # boot.kernelModules = [ "hid_apple" ];
-  # boot.extraModprobeConfig = ''
-  #   options hid_apple iso_layout=1
-  # '';
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
@@ -124,8 +115,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    # vim
-    # home-manager
+    vim
+    home-manager
     # wget
     # git
   ];

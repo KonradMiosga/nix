@@ -3,12 +3,10 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    # nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    home-manager.url = "github:nix-community/home-manager";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     stylix.url = "github:danth/stylix";
   };
@@ -19,8 +17,7 @@
       nixpkgs,
       home-manager,
       stylix,
-      # nvf,
-      # nixos-hardware,
+      nixos-hardware,
       ...
     }@inputs:
     let
@@ -36,20 +33,23 @@
           inherit inputs;
         };
         modules = [
-          # nixos-hardware.nixosModules.apple-macbook-air-7
+          nixos-hardware.nixosModules.apple-macbook-air-7
           ./hosts/scrappy/configuration.nix
 
           # stylix.nixosModules.stylix
-          #
+          # #
           # home-manager.nixosModules.home-manager
-          #   {
-          #     home-manager.useGlobalPkgs = true;
-          #     home-manager.useUserPackages = true;
+          # {
+          #   home-manager.useGlobalPkgs = true;
+          #   home-manager.useUserPackages = true;
           #
-          #     home-manager.users.copperplate = import ./home-manager/home.nix;
+          #   home-manager.users.copperplate = import ./home-manager/home.nix;
           #
-          #     # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
-          #   }
+          #   # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
+          #   home-manager.extraSpecialArgs = {
+          #     inherit inputs;
+          #   };
+          # }
         ];
       };
 

@@ -6,7 +6,7 @@
     ./hyprland
     ./neovim.nix
     # ./nvf.nix
-    # ./qt.nix
+    ./qt.nix
     ./ranger.nix
     ./starship.nix
     ./stylix.nix

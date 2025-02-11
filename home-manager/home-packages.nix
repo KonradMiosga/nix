@@ -6,24 +6,28 @@
     # Packages in each category are sorted alphabetically
 
     # Desktop apps
+    anki
     discord
     google-chrome
+    gnome-solanum
     networkmanagerapplet
     obsidian
     spotify
     telegram-desktop
     vesktop
-    vscode
+    # vscode
     wirelesstools
+    zoom-us
 
     # CLI utils
     brightnessctl
     cava
+    deno
     fzf
     grim
     slurp
     satty
-    grimblast
+    # grimblast
     pavucontrol
     playerctl
     ripgrep
@@ -43,6 +47,7 @@
     lua-language-server
     nil
     nixd
+    marksman
     # Formatter
     nixfmt-rfc-style
 
@@ -53,7 +58,8 @@
     xdg-desktop-portal-hyprland
 
     # Other
-    bemoji
+    # bemoji
     nix-prefetch-scripts
+    texlive.combined.scheme-full
   ];
 }
