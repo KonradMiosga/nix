@@ -7,17 +7,15 @@
 
     # Desktop apps
     anki
-    discord
+    alacritty
     google-chrome
-    gnome-solanum
     networkmanagerapplet
     obsidian
     spotify
     telegram-desktop
     vesktop
-    # vscode
     wirelesstools
-    zoom-us
+    vscode
 
     # CLI utils
     brightnessctl
@@ -27,8 +25,8 @@
     grim
     slurp
     satty
-    # grimblast
     pavucontrol
+    pandoc
     playerctl
     ripgrep
     tree
@@ -41,15 +39,16 @@
     # Coding stuff
     gcc
     nodejs_23
-    openjdk
+    openjdk17
     # LSPs
     jdt-language-server
     lua-language-server
-    nil
     nixd
     marksman
     # Formatter
     nixfmt-rfc-style
+    # stuff
+    tree-sitter
 
     # WM stuff
     libsForQt5.xwaylandvideobridge
@@ -61,5 +60,6 @@
     # bemoji
     nix-prefetch-scripts
     texlive.combined.scheme-full
+    python313Packages.pylatexenc
   ];
 }

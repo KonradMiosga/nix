@@ -1,7 +1,7 @@
 { config, lib, ... }:
 
 {
-  # services.mbpfan.enable = lib.mkDefault true;
+  services.mbpfan.enable = lib.mkForce false;
   #
   # boot.kernelParams = [
   #   # "acpi_backlight=vendor"

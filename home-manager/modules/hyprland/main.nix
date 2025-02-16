@@ -47,8 +47,8 @@
       decoration = {
         rounding = 2;
 
-        active_opacity = 0.92;
-        inactive_opacity = 0.76;
+        active_opacity = 1.0;
+        inactive_opacity = 1.0;
 
         shadow = {
           enabled = false;
@@ -59,7 +59,7 @@
         # };
 
       blur = {
-        enabled = true;
+        enabled = false;
         size = 5;
         passes = 5;
         popups = true;
@@ -71,8 +71,8 @@
       };
 
       animations = {
-        # enabled = false;
-        enabled = true;
+        enabled = false;
+        # enabled = true;
         first_launch_animation = true;
 
         bezier = [

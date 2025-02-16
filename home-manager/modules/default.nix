@@ -4,7 +4,7 @@
     ./bash.nix
     ./git.nix
     ./hyprland
-    ./neovim.nix
+    ./neovim
     # ./nvf.nix
     ./qt.nix
     ./ranger.nix
