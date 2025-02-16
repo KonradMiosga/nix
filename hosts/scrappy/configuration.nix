@@ -108,6 +108,9 @@
     nssmdns4 = true;
     openFirewall = true;
   };
+  services.printing.drivers = [
+    pkgs.hplip
+  ];
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

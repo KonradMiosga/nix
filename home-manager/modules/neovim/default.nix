@@ -62,6 +62,8 @@
         config = "require('gitsigns').setup()";
         type = "lua";
       }
+      #markdown-preview
+      pkgs.vimPlugins.markdown-preview-nvim
 
       #mini.nvim
       {

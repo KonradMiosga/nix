@@ -11,10 +11,11 @@ lspconfig.lua_ls.setup {
     }
   }
 }
-lspconfig.angularls.setup({})
-lspconfig.jdtls.setup({})
-lspconfig.marksman.setup({capabilities = capabilities})
+lspconfig.angularls.setup({ capabilities = capabilities })
+lspconfig.jdtls.setup({ capabilities = capabilities })
+lspconfig.marksman.setup({ capabilities = capabilities })
 lspconfig.nixd.setup({
+  capabilities = capabilities,
   cmd = { "nixd" },
   settings = {
     nixd = {
