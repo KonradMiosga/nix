@@ -9,6 +9,8 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     stylix.url = "github:danth/stylix";
+
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 
   outputs =
@@ -18,6 +20,7 @@
       home-manager,
       stylix,
       nixos-hardware,
+      zen-browser,
       ...
     }@inputs:
     let
@@ -56,6 +59,10 @@
       # Home Manager Configuration Output
       homeConfigurations.copperplate = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
+        extraSpecialArgs = {
+            inherit inputs;
+            system = "x86_64-linux";
+          };
         modules = [
           stylix.homeManagerModules.stylix
           ./home-manager/home.nix

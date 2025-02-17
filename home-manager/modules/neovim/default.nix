@@ -10,6 +10,8 @@
       {
         plugin = pkgs.vimPlugins.gruvbox-nvim;
       }
+      pkgs.vimPlugins.nvim-web-devicons
+
       #Telescope
       {
         plugin = pkgs.vimPlugins.telescope-nvim;
@@ -88,6 +90,13 @@
         config = "require('oil').setup()";
         type = "lua";
       }
+      #Neorg
+      {
+        plugin = pkgs.vimPlugins.neorg;
+        config = builtins.readFile config/setup/neorg.lua;
+        type = "lua";
+      }
+      pkgs.vimPlugins.neorg-telescope
     ];
     enable = true;
     defaultEditor = true;

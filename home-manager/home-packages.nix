@@ -22,6 +22,7 @@
     cava
     deno
     fzf
+    gowall
     grim
     slurp
     satty
