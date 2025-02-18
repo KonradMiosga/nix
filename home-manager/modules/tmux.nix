@@ -12,6 +12,10 @@
     extraConfig = ''
         set -s escape-time 0
 
+        #Images
+        set -gq allow-passthrough on
+        set -g visual-activity off
+
         #Configure True Colors
         set -g default-terminal "tmux-256color"
         set -ag terminal-overrides ",xterm-256color:RGB"

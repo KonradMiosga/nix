@@ -9,8 +9,6 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     stylix.url = "github:danth/stylix";
-
-    zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 
   outputs =
@@ -20,7 +18,6 @@
       home-manager,
       stylix,
       nixos-hardware,
-      zen-browser,
       ...
     }@inputs:
     let
@@ -38,21 +35,6 @@
         modules = [
           nixos-hardware.nixosModules.apple-macbook-air-7
           ./hosts/scrappy/configuration.nix
-
-          # stylix.nixosModules.stylix
-          # #
-          # home-manager.nixosModules.home-manager
-          # {
-          #   home-manager.useGlobalPkgs = true;
-          #   home-manager.useUserPackages = true;
-          #
-          #   home-manager.users.copperplate = import ./home-manager/home.nix;
-          #
-          #   # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
-          #   home-manager.extraSpecialArgs = {
-          #     inherit inputs;
-          #   };
-          # }
         ];
       };
 

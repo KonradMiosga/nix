@@ -5,6 +5,8 @@
 }:
 {
   programs.neovim = {
+    extraLuaPackages = ps: [ ps.magick ];
+    extraPackages = [ pkgs.imagemagick ];
     plugins = [
       #Theme
       {
@@ -90,13 +92,26 @@
         config = "require('oil').setup()";
         type = "lua";
       }
-      #Neorg
+
+      #outline
       {
-        plugin = pkgs.vimPlugins.neorg;
-        config = builtins.readFile config/setup/neorg.lua;
+        plugin = pkgs.vimPlugins.outline-nvim;
+        config = "require('outline').setup()";
         type = "lua";
       }
-      pkgs.vimPlugins.neorg-telescope
+      #snacks.nvim
+      # {
+      #   plugin = pkgs.vimPlugins.snacks-nvim;
+      #   config = builtins.readFile config/setup/snacks.lua;
+      #   type = "lua";
+      # }
+#image.nvim
+      {
+        plugin = pkgs.vimPlugins.image-nvim;
+        config = builtins.readFile config/setup/image.lua;
+        type = "lua";
+      }
+
     ];
     enable = true;
     defaultEditor = true;

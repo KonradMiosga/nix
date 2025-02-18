@@ -15,7 +15,7 @@
 
       monitor = ",preferred,auto,auto";
       "$mainMod" = "SUPER";
-      "$terminal" = "alacritty";
+      "$terminal" = "kitty";
       "$fileManager" = "$terminal -e sh -c 'ranger'";
       "$menu" = "wofi";
 

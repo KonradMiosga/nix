@@ -16,8 +16,6 @@
 
     packages = with pkgs; [
       git
-      # firefox
-      inputs.zen-browser.packages."${system}".default
     ];
   };
   imports = [

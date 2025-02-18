@@ -8,9 +8,11 @@
     # Desktop apps
     anki
     alacritty
+    firefox
     google-chrome
     networkmanagerapplet
     obsidian
+    libsForQt5.okular
     spotify
     telegram-desktop
     vesktop

@@ -4,6 +4,7 @@
     ./bash.nix
     ./git.nix
     ./hyprland
+    ./kitty.nix
     ./neovim
     # ./nvf.nix
     ./qt.nix
