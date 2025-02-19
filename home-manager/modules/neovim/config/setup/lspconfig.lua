@@ -14,6 +14,7 @@ lspconfig.lua_ls.setup {
 lspconfig.angularls.setup({ capabilities = capabilities })
 lspconfig.jdtls.setup({ capabilities = capabilities })
 lspconfig.marksman.setup({ capabilities = capabilities })
+lspconfig.ols.setup({ capabilities = capabilities })
 lspconfig.nixd.setup({
   capabilities = capabilities,
   cmd = { "nixd" },

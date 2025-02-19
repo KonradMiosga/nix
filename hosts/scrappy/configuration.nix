@@ -86,6 +86,12 @@
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    # Add any missing dynamic libraries for unpackaged programs
+    # here, NOT in environment.systemPackages
+  ];
+
   users.users.copperplate = {
     isNormalUser = true;
     description = "copperplate";
@@ -120,8 +126,8 @@
   environment.systemPackages = with pkgs; [
     vim
     home-manager
-    # wget
-    # git
+    wget
+    git
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

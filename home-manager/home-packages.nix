@@ -17,14 +17,10 @@
     telegram-desktop
     vesktop
     wirelesstools
-    vscode
 
     # CLI utils
     brightnessctl
-    cava
-    deno
     fzf
-    gowall
     grim
     slurp
     satty
@@ -40,16 +36,16 @@
     zip
 
     # Coding stuff
-    gcc
-    nodejs_23
-    openjdk17
+    glfw
+    odin
     # LSPs
     jdt-language-server
     lua-language-server
-    nixd
     marksman
+    nixd
     # Formatter
     nixfmt-rfc-style
+    ols
     # stuff
     tree-sitter
 
@@ -61,8 +57,8 @@
 
     # Other
     # bemoji
-    nix-prefetch-scripts
-    texlive.combined.scheme-full
-    python313Packages.pylatexenc
+    # nix-prefetch-scripts
+    # texlive.combined.scheme-full
+    # python313Packages.pylatexenc
   ];
 }
