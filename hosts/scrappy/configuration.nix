@@ -26,6 +26,7 @@
   ];
 
   hardware.enableAllFirmware = true;
+  hardware.enableRedistributableFirmware = true;
   # hardware.facetimehd.enable = true;
   networking.hostName = "scrappy"; # Define your hostname.
   # networking.wireless.enable = true; # Enables wireless support via wpa_supplicant.

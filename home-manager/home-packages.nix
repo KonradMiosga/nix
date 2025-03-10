@@ -36,8 +36,6 @@
     zip
 
     # Coding stuff
-    glfw
-    odin
     # LSPs
     jdt-language-server
     lua-language-server

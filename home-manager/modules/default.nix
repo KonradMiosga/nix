@@ -2,6 +2,7 @@
   imports = [
     ./alacritty.nix
     ./bash.nix
+    ./direnv.nix
     ./git.nix
     ./hyprland
     ./kitty.nix
